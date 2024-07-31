@@ -1,0 +1,11 @@
+#graph_input.h
+all functions are declared which include getParameter, getNodeList, getGraph, getInputInt, getInputString, getSouceNode, edgeExists, deleteEdge, deleteGraph.
+
+#graph_input.c
+all functions are defined here which will be further used in the graph algorithms.
+
+#bellmanford.c
+Bellmanford algorithm is used to compute the distance from one source to all other nodes and it is also applicable when distance between the nodes is negative. 
+It first the assumes the cost to infinity then updates the cost using d[v] = d[u] + c[u, v] if it is less than previous iteration cost. Total number of iterations
+are no. of vertices - 1.
+It will not give correct result if the total sum of distance in a cycle is negative. 
